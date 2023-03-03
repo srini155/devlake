@@ -1,10 +1,10 @@
-name: deployment
+name: deploy
 on: [push]
 
 jobs:
-  deployment-production:
+  production:
     runs-on: ubuntu-latest
-    name: deployment-production
+    name: production
     steps:
       - name: Get Pokemon name
         uses: ibrahimejaz/actiontesting@main
@@ -14,9 +14,9 @@ jobs:
       - name: Get the pokemon
         run: echo "${{ steps.pokemon.outputs.pokemon_name }} attack"
     
-  deployment-staging:
+  staging:
     runs-on: ubuntu-latest
-    name: deployment-staging
+    name: staging
     steps:
       - name: Get Pokemon name
         uses: ibrahimejaz/actiontesting@main
