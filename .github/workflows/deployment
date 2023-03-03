@@ -1,0 +1,27 @@
+name: deployment
+on: [push]
+
+jobs:
+  deployment-production:
+    runs-on: ubuntu-latest
+    name: deployment-production
+    steps:
+      - name: Get Pokemon name
+        uses: ibrahimejaz/actiontesting@main
+        id: pokemon
+        with:
+          pokemon_id: 150
+      - name: Get the pokemon
+        run: echo "${{ steps.pokemon.outputs.pokemon_name }} attack"
+    
+  deployment-staging:
+    runs-on: ubuntu-latest
+    name: deployment-staging
+    steps:
+      - name: Get Pokemon name
+        uses: ibrahimejaz/actiontesting@main
+        id: pokemon
+        with:
+          pokemon_id: 150
+      - name: Get the pokemon
+        run: echo "${{ steps.pokemon.outputs.pokemon_name }} attack"
