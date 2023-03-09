@@ -4,7 +4,7 @@ on: [push]
 jobs:
   production:
     runs-on: ubuntu-latest
-    name: production
+    name: some thing going to pppp
     steps:
       - name: Get Pokemon name
         uses: ibrahimejaz/actiontesting@main
