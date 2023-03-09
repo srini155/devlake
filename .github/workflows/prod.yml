@@ -2,7 +2,7 @@ name: Production
 on: [push]
 
 jobs:
-  production:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Get Pokemon name
