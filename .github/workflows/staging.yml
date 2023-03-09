@@ -2,9 +2,8 @@ name: staging
 on: [push]
 
 jobs:
-  staging:
+  deploy:
     runs-on: ubuntu-latest
-    name: only for stage
     steps:
       - name: Get Pokemon name
         uses: ibrahimejaz/actiontesting@main
