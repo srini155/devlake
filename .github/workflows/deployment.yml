@@ -1,8 +1,8 @@
-name: Production
+name: staging
 on: [push]
 
 jobs:
-  production:
+  staging:
     runs-on: ubuntu-latest
     name: production
     steps:
