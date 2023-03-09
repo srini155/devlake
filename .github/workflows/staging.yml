@@ -4,7 +4,7 @@ on: [push]
 jobs:
   staging:
     runs-on: ubuntu-latest
-    name: production
+    name: only for stage
     steps:
       - name: Get Pokemon name
         uses: ibrahimejaz/actiontesting@main
